@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <div id="survey-questions">
+        <form id="survey-form">
+            <p>1. How satisfied are you with our service?</p>
+            <select name="q1">
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <p>2. How likely are you to recommend us to a friend?</p>
+            <select name="q2">
+                <option value="1">1 - Not Likely</option>
+                <option value="2">2 - Somewhat Likely</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Likely</option>
+                <option value="5">5 - Very Likely</option>
+            </select>
+
+            <p>3. Was the service delivered on time?</p>
+            <select name="q3">
+                <option value="1">1 - No</option>
+                <option value="2">2 - Somewhat Late</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Mostly On Time</option>
+                <option value="5">5 - Always On Time</option>
+            </select>
+
+            <p>4. How would you rate our customer support?</p>
+            <select name="q4">
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <p>5. Was the website easy to use?</p>
+            <select name="q5">
+                <option value="1">1 - Difficult</option>
+                <option value="2">2 - Somewhat Difficult</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Easy</option>
+                <option value="5">5 - Very Easy</option>
+            </select>
+
+            <p>6. How would you rate the product quality?</p>
+            <select name="q6">
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <p>7. How affordable do you find our pricing?</p>
+            <select name="q7">
+                <option value="1">1 - Very Expensive</option>
+                <option value="2">2 - Expensive</option>
+                <option value="3">3 - Reasonable</option>
+                <option value="4">4 - Affordable</option>
+                <option value="5">5 - Very Affordable</option>
+            </select>
+
+            <p>8. How user-friendly is our mobile app?</p>
+            <select name="q8">
+                <option value="1">1 - Difficult</option>
+                <option value="2">2 - Somewhat Difficult</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Easy</option>
+                <option value="5">5 - Very Easy</option>
+            </select>
+
+            <p>9. How well does our product meet your needs?</p>
+            <select name="q9">
+                <option value="1">1 - Not at all</option>
+                <option value="2">2 - Slightly</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Well</option>
+                <option value="5">5 - Perfectly</option>
+            </select>
+
+            <p>10. How satisfied are you with the checkout process?</p>
+            <select name="q10">
+                <option value="1">1 - Very Dissatisfied</option>
+                <option value="2">2 - Somewhat Dissatisfied</option>
+                <option value="3">3 - Neutral</option>
+                <option value="4">4 - Satisfied</option>
+                <option value="5">5 - Very Satisfied</option>
+            </select>
+
+            <p>Add a Custom Question (Optional):</p>
+            <input type="text" id="custom-question" placeholder="Enter your question">
+            <button type="button" onclick="addCustomQuestion()">Add</button>
+
+            <br><br>
+            <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+
+    <canvas id="surveyChart" width="400" height="200"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="survey.js"></script>
+</body>
+</html>
